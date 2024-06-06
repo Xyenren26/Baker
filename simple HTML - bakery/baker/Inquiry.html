@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inquiry</title>
+		<link rel="stylesheet" href="css/styleforinquiry.css" type="text/css">
+		<link rel="icon" href="image/logo.png" type="logo/png">
+	</head>
+	<body>
+	<div class="banner">
+		<div class="navigation">
+		<a href="front_page.html">
+		<img src = "image/logo.png" class= "logo" >
+		</a>
+		<ul>
+			<li><a href = "front_page.html">HOME</a></li>
+			<li><a href = "Product.html">PRODUCT</a></li>
+			<li><a href = "workshop.html">WORKSHOP</a></li>
+			<li><a href = "#inquiry">INQUIRY</a></li>
+			<li></li>
+		</ul>
+		</div>
+		<div id ="inquiry">
+			<div class="inner">
+				<form>
+					<h3>iNQUiry</h3>
+					<p>Please fill out the form correctly for further inquiries; make sure to indicate your question, order, or request before submitting.</p>
+					<label class="form-group">
+						<input type="text" class="form-control" id="text1" required>
+						<span placeholder>Your Name</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" id="text2" required>
+						<span placeholder>Your Mail</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" class="form-control" id="text3" required>
+						<span placeholder>Contact Number</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group" >
+						<input type="text" class="form-control" id="text4" required>
+						<span placeholder>Your Message</span>
+						<span class="border"></span>
+					</label>
+					<button onclick="myFunction()">Submit</button>
+				</form>
+			</div>
+		</div>
+		</div>
+		<script>
+		function myFunction(){
+			var value1 = document.getElementById("text1").value;
+			var value2 = document.getElementById("text2").value;
+			var value3 = document.getElementById("text3").value;
+			var value4 = document.getElementById("text4").value;
+			  
+			alert(" Name: "+ value1 + "\n Email: " + value2 + "\n Number: " + value3 + "\n Message: "  + value4);
+		}
+	</script>
+	</body>
+	
+</html>

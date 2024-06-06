@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: san-serif;
+}
+.banner{
+	width: 100%;
+	height: 100%;
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+	background-size: cover;
+	object-fit: cover;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.navigation{
+	width: 85;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 250px;
+	cursor:  pointer;
+	
+}
+
+.navigation ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navigation ul li a{
+	font-family: "Lucida Handwriting";
+	text-decoration: underline;
+	color: #ed968a;
+	text-transform: uppercase;
+}
+.navigation ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #f9e3d3;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	Transition: 0.5s;
+}
+.navigation ul li:hover::after{
+	width: 100%;
+}
+.HOME {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+}
+.HOME p{
+	font-family: "Papyrus";
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  background: white;
+  color: #ec8b7f;
+}
+.column {
+ 	 float: left;
+	width: 25%;
+	margin-top: 100px;
+	padding: 10px 20px;
+	margin-left: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(236,139,127,255);
+	margin-bottom: 25px;
+    display: block;
+	cursor: pointer;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+	width: 300px;
+	background: rgba(236,139,127,255);
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+  
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.name {
+	font-family: "Papyrus";
+	color: black; 
+	font-size: 25px;
+	margin-top: 30px;
+}
+.text {
+
+  color: yellow;
+  font-size: 18px;
+  padding: 5px 5px;
+}
+.image__description {
+	
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px;
+}
